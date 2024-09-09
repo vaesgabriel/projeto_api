@@ -8,8 +8,8 @@ app.use(express.json());
 app.use('/api/usuarios', usuarioRouter);
 app.use('/api/produtos', produtoRouter);
 
-app.get("/health", (req, res) => {
-  res.status(200).json("message: ok");
+app.get("/api/health", (req, res) => {
+  res.status(200).json("Health Check Funcionando");
 });
 
 export default app;
